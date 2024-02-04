@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.10.1 on win32)" generated="2024-02-03T11:14:49.766961" rpa="false" schemaversion="5">
+<suite id="s1" name="DEMO" source="D:\DEMO">
+<suite id="s1-s1" name="Tests" source="D:\DEMO\tests">
+<suite id="s1-s1-s1" name="Tests" source="D:\DEMO\tests\Tests.robot">
+<test id="s1-s1-s1-t1" name="TC_2 save points table in csv" line="25">
+<kw name="Sqr Generator" owner="operations">
+<msg time="2024-02-03T11:14:50.088112" level="INFO">${sqr_gen} = &lt;generator object sqr_generator at 0x0000020DB5655620&gt;</msg>
+<var>${sqr_gen}</var>
+<status status="PASS" start="2024-02-03T11:14:50.088112" elapsed="0.000000"/>
+</kw>
+<for flavor="IN">
+<iter>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-02-03T11:14:50.088112" level="INFO">"generator object = &lt;generator object sqr_generator at 0x0000020DB5655620&gt;"</msg>
+<arg>message="generator object = ${sqr_}"</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-02-03T11:14:50.088112" elapsed="0.000000"/>
+</kw>
+<var name="${sqr_}">&lt;generator object sqr_generator at 0x0000020DB5655620&gt;</var>
+<status status="PASS" start="2024-02-03T11:14:50.088112" elapsed="0.000000"/>
+</iter>
+<var>${sqr_}</var>
+<value>${sqr_gen}</value>
+<status status="PASS" start="2024-02-03T11:14:50.088112" elapsed="0.000000"/>
+</for>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-02-03T11:14:50.088112" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-02-03T11:14:50.088112" elapsed="0.000000"/>
+</test>
+<status status="PASS" start="2024-02-03T11:14:49.811457" elapsed="0.276655"/>
+</suite>
+<status status="PASS" start="2024-02-03T11:14:49.811457" elapsed="0.288689"/>
+</suite>
+<status status="PASS" start="2024-02-03T11:14:49.770303" elapsed="0.331869"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="DEMO">DEMO</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="Tests">DEMO.Tests</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1-s1" name="Tests">DEMO.Tests.Tests</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

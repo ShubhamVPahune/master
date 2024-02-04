@@ -80,11 +80,11 @@ class SQUARE:
 # defining a decorator
 def hello_decorator(func):
     """Decorators are a very powerful and useful tool in Python
-      since it allows programmers to modify the behaviour of a function or class. 
-      Decorators allow us to wrap another function in order to extend 
-      the behaviour of the wrapped function, without permanently modifying it.
+        since it allows programmers to modify the behaviour of a function or class. 
+        Decorators allow us to wrap another function in order to extend 
+        the behaviour of the wrapped function, without permanently modifying it.
 
-      First Class Objects
+        First Class Objects
         In Python, functions are first class objects which means that functions 
         in Python can be used or passed as arguments.
 
@@ -100,9 +100,9 @@ def hello_decorator(func):
 	
 	# inner function can access the outer local
 	# functions like in this case "func"
-	def inner1():
-		print("Hello, this is before function execution")
-
+	
+    def inner1():
+	    print("Hello, this is before function execution")
 		# calling the actual function now
 		# inside the wrapper function.
 		func()

@@ -102,14 +102,14 @@ def hello_decorator(func):
 	# functions like in this case "func"
 	
     def inner1():
-	    print("Hello, this is before function execution")
-		# calling the actual function now
+        print("Hello, this is before function execution")
+		#calling the actual function now
 		# inside the wrapper function.
-		func()
-
-		print("This is after function execution")
-		
-	return inner1
+        func()
+        print("This is after function execution")
+        
+    
+    return inner1
 
 
 # defining a function, to be called inside wrapper

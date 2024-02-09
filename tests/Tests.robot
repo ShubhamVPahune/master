@@ -8,6 +8,7 @@ Test Teardown    Close Browser
 ${ipl_pointstable_url}    https://www.iplt20.com/points-table/men/2021
 ${goolge_url}    https://www.google.com/
 ${search_text}    IPL points table 2021
+${dict name}    Create Dictionary    key2=name
 
 *** Test Cases ***
 
@@ -26,6 +27,9 @@ TC_2 save points table in csv
     # launch browser and maximize    ${ipl_pointstable_url}
     # ${table_element}    Get WebElement    locator=//div[@class='points-table-page']//table[@class="ih-td-tab"]
     # read_all_table_details    ${table_element}
+    ${dict Name2}    Create Dictionary    key1=name
+    Log    ${dict_name}
+    Log    ${dict_Name2}
     ${sqr_gen}    sqr_generator
     FOR    ${sqr_}    IN    ${sqr_gen}
         Log    message="generator object = ${sqr_}"

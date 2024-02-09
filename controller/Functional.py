@@ -44,8 +44,20 @@ if __name__=="__main__":
     string = "1,2,3,4,5,6"
     t_s = Object_chaining(data=string)
     print(t_s)
-    print(t_s.str_to_list())
-    print(t_s.list_to_str().str_to_list())
-    print(t_s.convert_numbers_to_its_square())
-    print(t_s.list_to_str().convert_numbers_to_its_square())
-    print(t_s.str_to_list().list_to_str().convert_numbers_to_its_square())
+    # print(f"size of Object_chaining = {t_s.__sizeof__()}")
+    # print(t_s.str_to_list())
+    # print(t_s.list_to_str().str_to_list())
+        ...
+    # print(t_s.convert_numbers_to_its_square())
+    # print(t_s.list_to_str().convert_numbers_to_its_square())
+    # print(t_s.str_to_list().list_to_str().convert_numbers_to_its_square())
+    # print(f"size of Object_chaining = {t_s.__sizeof__()}")
+
+
+class test_t(object):
+    t=""
+
+# is same as 
+
+class test_ts:
+    t=""
